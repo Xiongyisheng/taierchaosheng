@@ -1,0 +1,16 @@
+# Minimal direct dependencies for the three archived training scripts.
+# The original requirements_freeze.txt is retained as an environment record,
+# but contains Anaconda build paths (file:///croot/...) that are not reusable.
+# These PyTorch wheels target Linux x86_64, Python 3.12 and CUDA 12.8.
+torch @ https://download.pytorch.org/whl/cu128/torch-2.8.0%2Bcu128-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=4354fc05bb79b208d6995a04ca1ceef6a9547b1c4334435574353d381c55087c
+torchvision @ https://download.pytorch.org/whl/cu128/torchvision-0.23.0%2Bcu128-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=9cb3c13997afcb44057ca10d943c6c4cba3068afde0f370965abce9c89fcffa9
+numpy==2.3.2
+pillow==11.3.0
+PyYAML==6.0.2
+scikit-learn==1.9.0
+scipy==1.18.1
+matplotlib==3.10.5
+transformers==5.16.1
+tokenizers==0.23.1
+huggingface_hub==1.29.0
+safetensors==0.8.0
